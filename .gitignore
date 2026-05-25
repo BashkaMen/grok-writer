@@ -1,0 +1,5 @@
+sounds/
+.env
+obj/
+bin/
+logs/
