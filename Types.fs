@@ -1,11 +1,5 @@
 module GrokWriter.Types
 
-/// Application state machine
-type AppState =
-    | Idle
-    | Recording
-    | Processing
-
 /// All errors that can occur in the pipeline
 type AppError =
     | ApiKeyMissing
@@ -16,6 +10,7 @@ type AppError =
     | ChatError of string
     | TypingError of string
     | SoundError of string
+    | Unexpected of exn
 
     override this.ToString() =
         match this with
@@ -27,6 +22,7 @@ type AppError =
         | ChatError msg -> $"Chat error: {msg}"
         | TypingError msg -> $"Typing error: {msg}"
         | SoundError msg -> $"Sound error: {msg}"
+        | Unexpected ex -> $"Unexpected error: {ex.Message}"
 
 /// STT response from xAI /v1/stt
 type SttResponse = {
