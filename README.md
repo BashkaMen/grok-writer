@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img alt=".NET" src="https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white" />
+  <img alt=".NET" src="https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet&logoColor=white" />
   <img alt="F#" src="https://img.shields.io/badge/F%23-FsToolkit-378BBA?logo=fsharp&logoColor=white" />
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-0078D6?logo=windows&logoColor=white" />
   <img alt="STT" src="https://img.shields.io/badge/STT-xAI%20Grok-000000" />
@@ -55,7 +55,7 @@ Works in any text field — browser, VS Code, Slack, Telegram, anywhere a regula
 ### Prerequisites
 
 - Windows 10/11
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
 - A microphone
 - An xAI API key — get one at [console.x.ai](https://console.x.ai)
 
